@@ -1,4 +1,4 @@
-This project is a championship management system built to showcase best practices in software architecture, dependency injection, authorization(Spring security), and testing using Spring Boot, with both Server-Side Rendering (SSR) via Thymeleaf and Client-Side Rendering (CSR) via Angular. The API is documented using Swagger/OpenAPI.
+This small project is a championship management system built to showcase best practices in software architecture, dependency injection, authorization(Spring security), and testing using Spring Boot, with both Server-Side Rendering (SSR) via Thymeleaf and Client-Side Rendering (CSR) via Angular. The API is documented using Swagger/OpenAPI.
 
 ---
 
