@@ -14,19 +14,19 @@ This project is a championship management system built to showcase best practice
 ## 📸 Screenshots
 
 ### 🔐 Login Page
-![Login Page](./screenshots/login.png)
+![Login Page](./assets/login.png)
 
 ---
 
 ### 📖 Swagger API Documentation
-![Swagger API](./screenshots/swagger.png)
+![Swagger API](./assets/swagger.png)
 
 ---
 
 ### 🏅 Team Ranking / Classement (Thymeleaf)
-![Team Classement](./screenshots/classement.png)
+![Team Classement](./assets/classement.png)
 
 ---
 
 ### 📋 Team Details
-![Team Details](./screenshots/details.png)
+![Team Details](./assets/details.png)
