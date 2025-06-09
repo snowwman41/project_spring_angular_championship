@@ -13,8 +13,18 @@ This project is a championship management system built to showcase best practice
 ---
 ## 📸 Screenshots
 
-### 🔐 Login Page
+### 🔐 Login Page for Admin ( to add games/teams)
 ![Login Page](./assets/login.png)
+
+---
+
+### 🔐 Add team
+![Login Page](./assets/add_team.png)
+
+---
+
+### 🔐 Add match
+![Login Page](./assets/add_match.png)
 
 ---
 
