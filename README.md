@@ -23,7 +23,7 @@ This project is a championship management system built to showcase best practice
 
 ---
 
-### 🏅 Team Ranking / Classement (Thymeleaf)
+### 🏅 Team Ranking / Classement
 ![Team Classement](./assets/classement.png)
 
 ---
