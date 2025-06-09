@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org" th:replace="~{base :: base(~{::#title}, ~{::#content})}">
+<th:block id="title">Ajouter une équipe</th:block>
+<th:block id="content">
+    <form method="post" th:action="@{/admin/team/add}">
+        <div class="alert alert-danger" th:if="${#fields.hasErrors('teamDTO.*')}">Impossible d'ajouter l'équipe</div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Nom de l'équipe</label>
+            <input type="text" id="name" th:field="*{teamDTO.name}"
+                   placeholder="Nom de l'équipe" class="form-control"
+                   th:classappend="${#fields.hasErrors('teamDTO.name')} ? 'is-invalid'">
+            <div class="invalid-feedback" th:errors="*{teamDTO.name}"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter l'équipe</button>
+    </form>
+</th:block>
+</html>

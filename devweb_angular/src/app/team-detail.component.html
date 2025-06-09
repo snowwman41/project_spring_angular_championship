@@ -1,0 +1,32 @@
+
+    <app-ranking [ranking]="ranking"></app-ranking>
+    <div class="container">
+        <input type="checkbox" [(ngModel)]="showWins" (change)="filterMatches()"> Victoires
+        <input type="checkbox" [(ngModel)]="showDraws" (change)="filterMatches()"> Nuls
+        <input type="checkbox" [(ngModel)]="showLosses" (change)="filterMatches()"> Défaites
+   
+    <table class="table table-striped">
+            <thead class="table-light">
+            <tr>
+                <th>Date Heure</th>
+                <th>Home Team</th>
+                <th>HomeT_Goal-AwayT_Goal</th>
+                <th>Away Team</th>
+            </tr>
+            </thead>
+            <tbody>
+                @for (match of filterMatches(); track match.id) {
+                <tr>
+                    <td>{{match.date + ' ' + match.time | date: 'MM/dd/Y HH:mm'}}</td>
+                    <td><app-team [team]="match.homeTeam"></app-team></td>
+                    <td>{{match.homeTeamGoals}} - {{match.awayTeamGoals}}</td>
+                    <td><app-team [team]="match.awayTeam"></app-team></td>
+                </tr>
+                }
+            </tbody>
+    </table>
+        
+   
+
+   
+</div>

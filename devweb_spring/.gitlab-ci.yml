@@ -1,0 +1,9 @@
+image: gradle:8.8.0-jdk21
+
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - gradle test

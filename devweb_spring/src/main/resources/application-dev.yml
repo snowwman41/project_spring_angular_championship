@@ -1,0 +1,10 @@
+server:
+  error:
+    include-stacktrace: always
+    include-message: always
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org" th:replace="~{base :: base(~{::#title}, ~{::#content})}">
+<th:block id="title">Connexion</th:block>
+<th:block id="content">
+  <form th:action="@{/login}" method="post">
+    <div th:if="${param.error}" class="alert alert-warning">Impossible de se connecter</div>
+    <div th:if="${param.logout}" class="alert alert-success">Déconnexion réussie</div>
+    <div class="mb-3">
+      <label for="username">Nom d'utilisateur</label>
+      <input type="text" id="username" name="username" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary" th:text="Connexion"></button>
+  </form>
+</th:block>
+</html>

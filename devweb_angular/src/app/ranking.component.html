@@ -1,0 +1,37 @@
+<div class="container">
+    
+    <table class="table table-striped">
+        <thead class="table-dark">
+        <tr>
+            <th>N°</th>
+            <th>Équipe</th>
+            <th>MJ</th>
+            <th>G</th>
+            <th>N</th>
+            <th>P</th>
+            <th>BP</th>
+            <th>BC</th>
+            <th>DB</th>
+            <th>Pts</th>
+        </tr>
+        </thead>
+        <tbody>
+            
+            @for (row of ranking; track row.team.id) {
+                <tr>
+                    <td> {{row.rank}}</td>
+                    <td><app-team [team]='row.team'></app-team></td>
+                    <td> {{row.matchPlayedCount}}</td>
+                    <td> {{row.matchWonCount}}</td>
+                    <td> {{row.drawCount}}</td>
+                    <td> {{row.matchLostCount}}</td>
+                    <td> {{row.goalForCount}}</td>
+                    <td> {{row.goalAgainstCount}}</td>
+                    <td> {{row.goalDifference}}</td>
+                    <td> {{row.points}}</td>
+                </tr>
+                }
+        </tbody> 
+    </table>
+</div>
+
