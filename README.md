@@ -9,7 +9,7 @@ This project is a championship management system built to showcase best practice
 - **CSR (UI):** Angular  
 - **Documentation:** Swagger / OpenAPI  
 - **Testing:** JUnit, Mockito  
-- **Build Tool:** Maven
+- **Build Tool:** Gradle
 ---
 ## 📸 Screenshots
 
