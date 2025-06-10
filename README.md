@@ -19,12 +19,12 @@ This small project is a championship management system built to showcase best pr
 
 ---
 
-### 🔐 Add team
+### 🔐 Add team with form validation
 ![Login Page](./assets/add_team.png)
 
 ---
 
-### 🔐 Add match
+### 🔐 Add match with form validation
 ![Login Page](./assets/add_match.png)
 
 ---
